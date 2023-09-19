@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: repeat-x;
+    background-color: hsl(225, 100%, 94%);
+}
+
+.container {
+    width: 350px;
+    height: 560px;
+    position: relative;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.container>img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.container section {
+    margin: 25px;
+}
+
+h2 {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 14px;
+    color: hsl(224, 23%, 55%);
+    line-height: 1.6;
+}
+
+.plan {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 75px;
+    padding: 20px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 8px;
+    margin: 25px;
+    font-size: 12px;
+}
+
+.plan a {
+    position: absolute;
+    right: 20px;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+
+.plan a:hover {
+    color: hsl(245, 83%, 68%);
+    text-decoration: none;
+}
+
+.plan img {
+    margin-right: 15px;
+    width: 40px;
+}
+
+.details p:first-child {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.details p:last-child {
+    color: hsl(224, 23%, 55%);
+}
+
+button {
+    display: block;
+}
+
+button[title="proceed"] {
+    width: calc(100% - 50px);
+    height: 40px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    box-shadow: 0 10px 30px -10px hsl(224, 23%, 55%);
+}
+
+button[title="proceed"]:hover {
+    background-color: hsl(245, 83%, 68%);
+}
+
+button[title="cancel"] {
+    margin: 0 auto;
+    border: none;
+    background-color: transparent;
+    font-weight: 900;
+    color: hsl(224, 23%, 55%);
+}
+
+
+button[title="cancel"]:hover {
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
